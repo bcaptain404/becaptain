@@ -78,44 +78,42 @@
     z-index:1;
   }
 
-  /* --- resume-style spacing tweaks --- */
-.section h2 {
-  margin-bottom: 0.8rem; /* tighter, but consistent */
+  /* --- community section spacing only --- */
+.section.community h2 {
+  margin-bottom: 0.8rem;
 }
 
-.section ul.links {
+.section.community ul.links {
   list-style: none;
   padding-left: 0;
   margin: 0.5rem 0 0 0;
 }
 
-.section ul.links li {
+.section.community ul.links li {
   display: flex;
   align-items: flex-start;
   flex-wrap: wrap;
-  margin: 0.4rem 0 0.6rem; /* main spacing between roles */
+  margin: 0.4rem 0 0.6rem; /* spacing between roles */
   line-height: 1.4;
   gap: 0.4rem;
 }
 
-/* make titles stand out slightly but not shouty */
-.section ul.links .title {
+.section.community ul.links .title {
   font-weight: 600;
   color: #e0e0e0;
   display: block;
 }
 
-/* subtler metadata */
-.section ul.links .meta {
+.section.community ul.links .meta {
   font-size: 0.85rem;
   color: #9da2a8;
   margin-left: 0.25rem;
 }
 
-/* tighten up <p> under Entrepreneurship */
-.section p {
-  margin-top: 0.4rem;
-  line-height: 1.5;
+/* optional faint divider between roles */
+.section.community ul.links li + li {
+  border-top: 1px solid rgba(255,255,255,0.06);
+  padding-top: 0.5rem;
 }
 
 
@@ -335,7 +333,7 @@
     </section>
 
         <!-- COMMUNITY -->
-    <section class="section">
+    <section class="section community">
       <h2>Community & Leadership</h2>
       <ul class="links">
         <li>
@@ -381,10 +379,9 @@
 
     <!-- ENTREPRENEUR -->
     <section class="section">
-      <h2>Entrepreneurship</h2>
+      <h2>Entrepreneur</h2>
       <p style="margin:0;">
-        Founder and active operator of several independent ventures, each maintained under its own brand identity.
-        Work spans creative production, education, and technology—with focus on bridging artistry and structure through sustainable design.
+        Founder and active operator of multiple independent ventures, each maintained under its own brand identity, spanning creative production and technology.
       </p>
     </section>
 
@@ -422,7 +419,7 @@
 
 
     <footer>
-      becaptain.net v1.0.0<br>
+      becaptain.net v1.0.2<br>
       &copy; <span id="y"></span> Bē Captain — all rights reserved.
     </footer>
   </main>
