@@ -1,22 +1,131 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
-	<title></title>
-	<meta name="generator" content="LibreOffice 25.2.5.2 (Linux)"/>
-	<meta name="created" content="2025-11-06T23:13:32.909992317"/>
-	<meta name="changed" content="2025-11-06T23:21:02.356905724"/>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BeCaptain</title>
+  <style>
+    body {
+      font-family: "Inter", "Segoe UI", sans-serif;
+      background: #0e0e0e;
+      color: #eee;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      min-height: 100vh;
+    }
+    header {
+      text-align: center;
+      margin-top: 60px;
+    }
+    header h1 {
+      font-size: 2.5rem;
+      letter-spacing: 0.05em;
+      margin-bottom: 0.25em;
+      color: #fff;
+    }
+    header p {
+      color: #aaa;
+      font-style: italic;
+      margin: 0;
+    }
+    .section {
+      width: 90%;
+      max-width: 600px;
+      background: #1a1a1a;
+      border-radius: 12px;
+      padding: 25px;
+      margin: 25px 0;
+      box-shadow: 0 0 25px rgba(0,0,0,0.4);
+    }
+    .section h2 {
+      margin-top: 0;
+      color: #ffae00;
+      font-size: 1.4rem;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+    .linklist {
+      list-style: none;
+      padding-left: 0;
+      margin: 0;
+    }
+    .linklist li {
+      margin: 12px 0;
+    }
+    a {
+      color: #70c0ff;
+      text-decoration: none;
+      transition: color 0.15s ease;
+    }
+    a:hover {
+      color: #ffae00;
+    }
+    footer {
+      margin: 40px 0 20px;
+      font-size: 0.85rem;
+      color: #555;
+    }
+  </style>
 </head>
-<body lang="en-US" dir="ltr"><p>YouTube:
-@BeCaptainMusic<br/>
-<a href="https://www.youtube.com/@BeCaptainMusic">https://www.youtube.com/@BeCaptainMusic</a></p>
-<p>Instagram: BeCaptainMusic<br/>
-<a href="https://www.instagram.com/BeCaptainMusic">https://www.instagram.com/BeCaptainMusic</a></p>
-<p>TikTok: @BeCaptainMusic<br/>
-<a href="https://www.tiktok.com/@BeCaptainMusic">https://www.tiktok.com/@BeCaptainMusic</a></p>
-<p><br/>
-<br/>
+<body>
+  <header>
+    <h1>BeCaptain</h1>
+    <p>Musician • Developer • Maker</p>
+  </header>
 
-</p>
+  <div class="section">
+    <h2>My Music</h2>
+    <ul class="linklist">
+      <li>🎵 <strong>YouTube:</strong> <a href="https://www.youtube.com/@BeCaptainMusic">@BeCaptainMusic</a></li>
+      <li>📸 <strong>Instagram:</strong> <a href="https://www.instagram.com/BeCaptainMusic">BeCaptainMusic</a></li>
+      <li>🎶 <strong>TikTok:</strong> <a href="https://www.tiktok.com/@BeCaptainMusic">@BeCaptainMusic</a></li>
+      <li>💿 <strong>BandCamp:</strong> <a href="https://bridgesablaze.bandcamp.com/dashboard">bridgesablaze</a> (under construction)</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h2>Social Media</h2>
+    <ul class="linklist">
+      <li>👻 <strong>Snapchat:</strong> picard_maneuver (most responsive)</li>
+      <li>🌌 <strong>BlueSky:</strong> <a href="https://bridgesablaze.bsky.social/">bridgesablaze</a></li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h2>Coding & General</h2>
+    <ul class="linklist">
+      <li>🐙 <strong>GitHub:</strong> <a href="https://github.com/bcaptain404">bcaptain404</a></li>
+      <li>🧱 <strong>Bitbucket:</strong> <a href="https://bitbucket.org/bcaptain">bcaptain</a></li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h2>Game Dev</h2>
+    <ul class="linklist">
+      <li>🧩 <strong>Bitbucket (Team):</strong> <a href="https://bitbucket.org/tinker_team">tinker_team</a></li>
+      <li>📘 <strong>Blog:</strong> <a href="https://bcaptain.wordpress.com/">bcaptain.wordpress.com</a></li>
+      <li>🔥 <strong>Hexen EoC (Doom 3 Mod):</strong> <a href="https://web.archive.org/web/20190830031603/http://hexenmod.net/">archived site</a></li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h2>Art & Lifestyle</h2>
+    <ul class="linklist">
+      <li>🎨 <strong>DeviantArt:</strong> <a href="https://www.deviantart.com/bcaptain">bcaptain</a></li>
+      <li>💬 <strong>Polyamory Blog:</strong> <a href="https://polylogsblog.wordpress.com/">polylogsblog.wordpress.com</a></li>
+    </ul>
+  </div>
+
+  <footer>
+    &copy; <span id="year"></span> BeCaptain. All rights reserved.
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
