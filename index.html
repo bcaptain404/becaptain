@@ -63,13 +63,34 @@
     content:"";
     position:absolute;
     inset:-10px;
-    background:
-      linear-gradient(140deg, rgba(0,0,0,0.80), rgba(0,0,0,0.10)),
-      url("/img/music-bg.jpg") center 35% / cover no-repeat;
     opacity:.22;                 /* tweak to taste */
     filter:saturate(.7) blur(1px);
     pointer-events:none;
     z-index:0;                   /* NOT -1 */
+  }
+
+  .section.music-bg::before{
+    background:
+      linear-gradient(140deg, rgba(0,0,0,0.80), rgba(0,0,0,0.10)),
+      url("./img/music-bg.jpg") center 35% / cover no-repeat;
+  }
+
+  .section.diablo-bg::before{
+    background:
+      linear-gradient(140deg, rgba(0,0,0,0.80), rgba(0,0,0,0.10)),
+      url("./img/diablo-bg.jpg") center 35% / cover no-repeat;
+  }
+
+  .section.hexen-bg::before{
+    background:
+      linear-gradient(140deg, rgba(0,0,0,0.80), rgba(0,0,0,0.10)),
+      url("./img/hexen-bg.jpg") center 35% / cover no-repeat;
+  }
+
+  .section.coding-bg::before{
+    background:
+      linear-gradient(140deg, rgba(0,0,0,0.80), rgba(0,0,0,0.10)),
+      url("./img/coding-bg.png") center 35% / cover no-repeat;
   }
 
   /* lift real content above the bg image */
@@ -170,7 +191,7 @@
   <main class="wrap">
 
     <!-- MUSIC -->
-    <section class="section section-music has-bg">
+    <section class="section section-music has-bg music-bg">
       <h2>Musician</h2>
       <ul class="links">
 
@@ -233,7 +254,7 @@
     </section>
 
     <!-- CODING -->
-    <section class="section">
+    <section class="section section-coding has-bg coding-bg">
       <h2>Developer</h2>
       <ul class="links">
         <li>
@@ -267,7 +288,7 @@
     </section>
 
     <!-- GAME DEV -->
-    <section class="section">
+    <section class="section section-hexen has-bg hexen-bg">
       <h2>Game Developer</h2>
       <ul class="links">
         <li>
@@ -314,7 +335,7 @@
     </section>
 
     <!-- ART -->
-    <section class="section">
+    <section class="section section-diablo has-bg diablo-bg">
       <h2>Artist</h2>
       <ul class="links">
         <li>
